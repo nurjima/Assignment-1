@@ -1,0 +1,27 @@
+import pandas as pd
+
+from pycoingecko import CoinGeckoAPI
+cg = CoinGeckoAPI()
+
+
+class market_cap:
+    def __init__(self, n):
+        self.n = n
+        
+    def top_N(self):
+        
+        coin_market=cg.get_coins_markets(vs_currency='usd')
+
+        df_market= pd.DataFrame(coin_market, columns=['id','market_cap'])
+
+        df_top = df_market.nlargest(self.n, 'market_cap')
+
+        print (df_top)
+
+
+top_10 = market_cap(10)
+top_10.top_N()
+
+top_20 = market_cap(20)
+top_20.top_N()
+
