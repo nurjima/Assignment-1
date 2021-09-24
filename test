@@ -1,0 +1,5 @@
+top_10 = market_cap(10)
+top_10.top_N()
+
+top_20 = market_cap(20)
+top_20.top_N()
