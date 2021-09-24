@@ -25,9 +25,10 @@ Any optional parameters can be passed using same names, as defined in CoinGecko 
 
 For any parameter:
 
-***_Lists_** are supported as input for multiple-valued comma-separated parameters
+**_Lists_** are supported as input for multiple-valued comma-separated parameters
 _(e.g. see /simple/price usage examples)._
-***_Booleans_** are supported as input for boolean type parameters; they can be str ('true', 'false'') or bool (True, False)
+
+**_Booleans_** are supported as input for boolean type parameters; they can be str ('true', 'false'') or bool (True, False)
 _(e.g. see /simple/price usage examples)._
 Usage examples:
 ```
