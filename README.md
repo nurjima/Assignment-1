@@ -24,9 +24,9 @@ Any optional parameters can be passed using same names, as defined in CoinGecko 
 
 For any parameter:
 
-  Lists are supported as input for multiple-valued comma-separated parameters
+1. Lists are supported as input for multiple-valued comma-separated parameters
 (e.g. see /simple/price usage examples).
-  Booleans are supported as input for boolean type parameters; they can be str ('true', 'false'') or bool (True, False)
+2. Booleans are supported as input for boolean type parameters; they can be str ('true', 'false'') or bool (True, False)
 (e.g. see /simple/price usage examples).
 Usage examples:
 ```
